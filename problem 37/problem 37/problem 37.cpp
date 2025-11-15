@@ -6,7 +6,7 @@ using namespace std;
 void count99(int n )
 {
  
-    for (int i  = n ; i <= 99; i++)
+    for (int i  = n+1 ; i <= 99; i++)
         cout << i << endl;
 }
 

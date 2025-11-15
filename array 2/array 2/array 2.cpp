@@ -19,7 +19,7 @@ int main()
     float sum = 0;
     for (int i = 0; i < size; i++) {
         sum += marks[i];
-        cout << sum << endl;
+     
     }
 
     cout << "The average of your marks is: " << sum / size << endl;

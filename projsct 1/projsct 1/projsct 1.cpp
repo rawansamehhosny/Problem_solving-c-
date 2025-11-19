@@ -1,19 +1,16 @@
-// projsct 1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 
 #include <iostream>
 #include <string>
 using namespace std;
 
-struct stractinfo
+struct structinfo
 {
 	string name;
 	int age;
 	string phone;
 	string address;
 };
-void readinfo(stractinfo& info) {
+void readinfo(structinfo& info) {
 	cout << "Enter name: ";
 	getline(cin, info.name);
 	cout << "Enter age: ";
@@ -25,7 +22,7 @@ void readinfo(stractinfo& info) {
 	getline(cin, info.address);
 }
 
-void printinfo(const stractinfo& info) {
+void printinfo(const structinfo& info) {
 	cout << "------------------" << endl;
 	cout << "Name: " << info.name << endl;
 	cout << "Age: " << info.age << endl;
@@ -37,7 +34,7 @@ void printinfo(const stractinfo& info) {
 int main()
 {
 	const int SIZE = 2;
-	stractinfo person[SIZE];
+	structinfo person[SIZE];
 	for (int i = 0; i < SIZE; i++) {
 		cout << "------------------" << endl;
 		cout << "Enter information for person " << (i + 1) << ":" << endl;
